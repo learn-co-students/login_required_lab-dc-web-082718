@@ -1,0 +1,9 @@
+Hi, <%=current_user%>
+
+<%link_to "Would you like to see a secret?", secrets_path%>
+
+Logout:
+<form method="post" action="/logout">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" values="logout">
+</form>

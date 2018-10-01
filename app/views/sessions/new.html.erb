@@ -1,0 +1,8 @@
+
+
+<h1> New User </h1>
+<%= form_tag({controller: "sessions", action:"create", method: "post"}) do %>
+
+    <%= text_field_tag :name %>
+    <%= submit_tag "create user" %>
+<% end %>
